@@ -1,0 +1,43 @@
+{
+  "name": "@reactce/notifications-react-notification-system",
+  "version": "1.0.8",
+  "description": "React-CE React Notification System Plugin",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "npm run build:tsc",
+    "build:tsc": "tsc -d",
+    "prebuild": "npm run prebuild:clean && npm run prebuild:version",
+    "prebuild:clean": "rimraf es",
+    "prebuild:version": "npm version patch"
+  },
+  "peerDependencies": {
+    "@reactce/core": "^1.0.11",
+    "react": ">=16",
+    "react-notification-system": ">=0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "@reactce/core": "1.0.11",
+    "@types/react": "^16.9.32",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.14.1",
+    "eslint-plugin-react": "^7.4.0",
+    "typescript": "^3.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hrtemel/reactce.git"
+  },
+  "author": "Haydar Rıdvan TEMEL <hrtemel@gmail.com>",
+  "keywords": [
+    "react",
+    "reactce",
+    "react-notification-system"
+  ],
+  "license": "MIT",
+  "url": "https://github.com/hrtemel/reactce.git"
+}

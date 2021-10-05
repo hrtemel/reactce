@@ -1,0 +1,29 @@
+{
+  "name": "@reactce/localization",
+  "version": "1.0.2",
+  "description": "A simple but very useful localization library for javascript",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "keywords": [
+    "localization"
+  ],
+  "author": "Haydar Rıdvan TEMEL <hrtemel@gmail.com>",
+  "homepage": "https://github.com/hrtemel/reactce#readme",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run build:tsc",
+    "build:tsc": "tsc -d",
+    "prebuild": "npm run prebuild:clean && npm run prebuild:version",
+    "prebuild:clean": "rimraf lib",
+    "prebuild:version": "npm --no-git-tag-version version patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hrtemel/reactce.git"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {}
+}

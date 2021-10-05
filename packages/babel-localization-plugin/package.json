@@ -1,0 +1,11 @@
+{
+  "name": "@reactce/babel-localization-plugin",
+  "main": "./index.js",
+  "version": "1.0.7",
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.evrakbulutu.com"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "@reactce/notifications",
+  "version": "1.0.3",
+  "description": "Abstract notification system.",
+  "scripts": {
+    "build": "npm run build:tsc",
+    "build:tsc": "tsc -d",
+    "prebuild": "npm run prebuild:clean && npm run prebuild:version",
+    "prebuild:clean": "rimraf es",
+    "prebuild:version": "npm version patch"
+  },
+  "main": "es/index.js",
+  "types": "es/index.d.ts",
+  "engineStrict": false,
+  "engines": {
+    "npm": ">=2.14.7",
+    "node": ">=6"
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "@types/react": "^16.9.32",
+    "babel-eslint": "^10.0.1",
+    "copy-files-from-to": "^2.3.0",
+    "eslint": "^5.14.1",
+    "eslint-plugin-react": "^7.4.0",
+    "typescript": "^3.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hrtemel/reactce.git"
+  },
+  "author": "Haydar Rıdvan TEMEL <hrtemel@gmail.com>",
+  "keywords": [
+    "react",
+    "notifications"
+  ],
+  "license": "MIT",
+  "url": "https://github.com/hrtemel/cross-env-rjsf-core.git"
+}
